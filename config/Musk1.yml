@@ -1,0 +1,22 @@
+#opt
+train_epoch: 70           # number of epochs
+B: 1                 # batch size
+warmup_epoch: 0    # number of warm-up epochs
+wd: 0.00001               # weight decay
+lr: 0.0002
+min_lr: 0
+#dset
+dataset: Musk1
+n_class: 2                            # number of classes
+n_worker: 8                          # number of workers
+pin_memory: False                     # use pin memory in dataloader
+dataset_root: './dataset_csv'   # path to dataset
+
+cv_fold: 4
+fold_start: 0
+# pretrained
+backbone: '---'
+pretrain: '---'
+D_feat: 166  
+D_inner: 256
+

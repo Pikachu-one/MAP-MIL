@@ -1,0 +1,36 @@
+#opt
+train_epoch: 70           # number of epochs
+B: 1                 # batch size
+warmup_epoch: 0    # number of warm-up epochs
+wd: 0.00001               # weight decay
+lr: 0.0002
+min_lr: 0
+
+#dset
+dataset: GastricCancer
+n_class: 2                            # number of classes
+data_dir: '/mnt/Xsky/zyl/dataset/CAMELYON16/roi_feats'       # directory of dataset
+
+n_worker: 8                          # number of workers
+pin_memory: False                     # use pin memory in dataloader
+n_shot: -1
+
+
+
+
+dataset_root: 
+persistence: False
+same_psize: 0
+cv_fold: 4
+seed: 2021
+fold_start: 0
+
+# pretrained
+backbone: 'ctranspath'
+pretrain: 'ctranspath'
+D_feat: 768
+D_inner: 512
+
+
+
+

@@ -1,0 +1,25 @@
+#opt
+wd: 0.00001               # weight decay
+lr: 0.0002
+min_lr: 0
+#dset
+dataset: GastricCancer
+n_class: 2                            # number of classes
+n_worker: 8                          # number of workers
+pin_memory: False                     # use pin memory in dataloader
+
+dataset_root: 
+
+persistence: False
+
+same_psize: 0
+
+fold_start: 0
+# pretrained
+backbone: 'Resnet50'
+pretrain: 'Resnet50'
+D_feat: 1024  
+D_inner: 256
+
+
+
